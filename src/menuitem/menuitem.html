@@ -1,3 +1,11 @@
-<li role="menuitem">
-    <slot></slot>
+<li part="host" role="none">
+    <a
+        role="menuitem"
+        aria-haspopup="true"
+        aria-expanded="false"
+        href="#"
+        tabindex="0">
+            <slot></slot>
+    </a>
+    <slot name="submenu"></slot>
 </li>

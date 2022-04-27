@@ -1,7 +1,7 @@
-<div>
-    <input role="combobox" aria-label="something" aria-autocomplete="both" />
-    <button aria-controls="r-multiselect-1"></button>
-    <ul id="r-multiselect-1" role="listbox" aria-activedescendant="">
+<div part="host">
+    <input part="input" role="combobox" aria-label="something" aria-autocomplete="both" />
+    <button part="button" aria-controls="r-multiselect-1"></button>
+    <r-listbox aria-activedescendant="">
         <slot></slot>
-    </ul>
+    </r-listbox>
 </div>

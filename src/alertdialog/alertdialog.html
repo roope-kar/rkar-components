@@ -1,13 +1,14 @@
 <div
+    part="host"
     role="alertdialog"
     aria-modal="true"
     aria-labelledby="alertdialog-label"
     aria-describedby="alertdialog-description"
 >
-    <h2 id="alertdialog-label" class="alertdialog-header">
+    <h2 id="alertdialog-label" part="header">
         <slot name="header"></slot>
     </h2>
-    <p id="alertdialog-description" class="alertdialog-description">
+    <p id="alertdialog-description" part="description">
         <slot name="description"></slot>
     </p>
     <div class="alertdialog-controls">
