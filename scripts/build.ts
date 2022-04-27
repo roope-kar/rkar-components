@@ -20,9 +20,9 @@ esbuild.build({
                 build.onResolve({ filter: /^src/ }, args => {
                     return {
                         path: path.resolve(__dirname, '..', args.path)
-                    }
+                    };
                 });
             }
         }
     ]
-}).catch(() => process.exit(1))
+}).catch(() => process.exit(1));

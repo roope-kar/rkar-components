@@ -13,12 +13,12 @@ style.innerHTML = css;
 - * (asterisk) Expands all closed sibling nodes that are at the same level as the focused node.
  */
 class Feed extends HTMLElement {
-	constructor() {
-		super();
-		this.attachShadow({ mode: 'open' });
-		this.append(style);
-		this.append(template.content.cloneNode(true));
-	}
+    constructor() {
+        super();
+        this.attachShadow({ mode: 'open' });
+        this.append(style);
+        this.append(template.content.cloneNode(true));
+    }
 }
 
 customElements.define('rkar-feed', Feed);

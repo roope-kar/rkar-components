@@ -1,8 +1,23 @@
-<div id="alertdialog-1" class="alertdialog" role="alertdialog" aria-modal="true" aria-labelledby="alertdialog-label" aria-describedby="alertdialog-description">
-	<h2 id="alertdialog-label" class="alertdialog-header"></h2>
-	<p id="alertdialog-description" class="alertdialog-description"></p>
-	<div class="alertdialog-controls">
-		<button type="button">cancel</button>
-		<button type="button" aria-controls="target_of_this_effect" onclick="onConfirm()">confirm</button>
-	</div>
+<div
+    role="alertdialog"
+    aria-modal="true"
+    aria-labelledby="alertdialog-label"
+    aria-describedby="alertdialog-description"
+>
+    <h2 id="alertdialog-label" class="alertdialog-header">
+        <slot name="header"></slot>
+    </h2>
+    <p id="alertdialog-description" class="alertdialog-description">
+        <slot name="description"></slot>
+    </p>
+    <div class="alertdialog-controls">
+        <button type="button">cancel</button>
+        <button
+            type="button"
+            aria-controls="target_of_this_effect"
+            onclick="onConfirm()"
+        >
+            confirm
+        </button>
+    </div>
 </div>

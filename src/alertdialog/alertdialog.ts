@@ -8,12 +8,12 @@ const style = document.createElement('style');
 style.innerHTML = css;
 
 class AlertDialog extends HTMLElement {
-	constructor() {
-		super();
-		this.attachShadow({ mode: 'open' });
-		this.append(style);
-		this.append(template.content.cloneNode(true));
-	}
+    constructor() {
+        super();
+        this.attachShadow({ mode: 'open' });
+        this.append(style);
+        this.append(template.content.cloneNode(true));
+    }
 }
 
-customElements.define('rkar-alertdialog', AlertDialog);
+customElements.define('r-alertdialog', AlertDialog);

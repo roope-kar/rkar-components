@@ -1,1 +1,5 @@
-:host {}
+:host {
+    border: 1px solid var(--r-color);
+    color: var(--r-color);
+    background: var(--r-background);
+}

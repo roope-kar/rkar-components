@@ -1,0 +1,6 @@
+:host {
+    background: var(--r-background);
+    border: 1px solid var(--r-color);
+    border-radius: 4px;
+    padding: 2px 4px;
+}
